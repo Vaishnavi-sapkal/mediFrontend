@@ -1,0 +1,17 @@
+.doctor-img {
+  animation: mobilize-img 7s ease-in-out infinite both;
+}
+
+@keyframes mobilize-img {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
