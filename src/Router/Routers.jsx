@@ -5,7 +5,7 @@ import Medicines from "../pages/Medicines/Medicines";
 import HealthTips from "../pages/HealthTips/HealthTips";
 import About from "../pages/About/About";
 import FAQ from "../pages/FAQ/FAQ";
-import Contact from "../Pages/Contact/Contact";
+import Contact from "../pages/Contact/Contact";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import DonateForm from "../pages/Donate/DonateForm";
