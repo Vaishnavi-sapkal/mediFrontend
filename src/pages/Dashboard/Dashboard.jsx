@@ -3,7 +3,7 @@ import { VerticalBar } from "./VerticalBar";
 import axios, { all } from "axios";
 import { Box, CircularProgress, Grid, Paper, Typography } from "@mui/material";
 import { Doughnut } from "react-chartjs-2";
-import { DoughnutChart } from "./doughnutChart";
+import { DoughnutChart } from "./DoughnutChart";
 import medicineImg1 from "../../assets/button4.webp";
 import medicineImg2 from "../../assets/button2.jpg";
 import medicineImg3 from "../../assets/button3.png";
