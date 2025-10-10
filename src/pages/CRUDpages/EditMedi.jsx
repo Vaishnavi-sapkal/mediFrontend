@@ -30,7 +30,7 @@ function EditMedi() {
   let { id } = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/medicinedata/${id}`).then((res) => {
+    axios.get(`https://medibackend-au6d.onrender.com/medicinedata/${id}`).then((res) => {
       setformData(res.data);
     });
   }, [id]);
@@ -78,7 +78,7 @@ function EditMedi() {
       return;
     }
     axios
-      .put(`http://localhost:5000/medicinedata/${id}/edit`, {
+      .put(`https://medibackend-au6d.onrender.com/medicinedata/${id}/edit`, {
         DonarName: formData.DonarName,
         contact: formData.contact,
         company: formData.company,

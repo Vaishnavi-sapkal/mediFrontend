@@ -13,24 +13,24 @@ function ShowMedi() {
   const [yourRole, setyourRole] = useState("");
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/medicinedata/${id}`).then((res) => {
+    axios.get(`https://medibackend-au6d.onrender.com/medicinedata/${id}`).then((res) => {
       setmedicine(res.data);
     });
   }, [id]);
 
   let handleDelete = (id) => {
-    axios.delete(`http://localhost:5000/medicinedata/${id}/delete`);
+    axios.delete(`https://medibackend-au6d.onrender.com/medicinedata/${id}/delete`);
     navigate(`/medicines`);
   };
 
   let handleReceiverId = async (id) => {
     const { data } = await axios.post(
-      "http://localhost:5000",
+      "https://medibackend-au6d.onrender.com",
       {},
       { withCredentials: true }
     );
 
-    const res = await axios.get("http://localhost:5000/role", {
+    const res = await axios.get("https://medibackend-au6d.onrender.com/role", {
       withCredentials: true,
     });
 
@@ -41,7 +41,7 @@ function ShowMedi() {
     setyourRole(userrole);
     if (userrole == "Pharmacy") {
       await axios.patch(
-        `http://localhost:5000/medicinedata/${id}/request`,
+        `https://medibackend-au6d.onrender.com/medicinedata/${id}/request`,
         {},
         {
           withCredentials: true,

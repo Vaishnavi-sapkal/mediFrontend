@@ -28,14 +28,14 @@ const DrawerLists = ({ drawerWidth = 260, isSmallScreen }) => {
     const checkAndFetchRole = async () => {
       try {
         const { data } = await axios.post(
-          "http://localhost:5000",
+          "https://medibackend-au6d.onrender.com",
           {},
           { withCredentials: true }
         );
         const { status } = data;
 
         if (status) {
-          const res = await axios.get("http://localhost:5000/role", {
+          const res = await axios.get("https://medibackend-au6d.onrender.com/role", {
             withCredentials: true,
           });
           console.log("my role is : ", res.data.role);

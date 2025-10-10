@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
         }
 
         const { data } = await axios.post(
-          "http://localhost:5000",
+          "https://medibackend-au6d.onrender.com",
           {},
           { withCredentials: true }
         );

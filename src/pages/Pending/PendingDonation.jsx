@@ -15,14 +15,14 @@ function PendingDonation() {
   const [Medicines, setMedicines] = useState([]);
 
   const handleStatus = (id, newStatus) => {
-    axios.patch(`http://localhost:5000/pendingDonation/${id}/status`, {
+    axios.patch(`https://medibackend-au6d.onrender.com/pendingDonation/${id}/status`, {
       status: newStatus,
     });
     setMedicines((prev) => prev.filter((med) => med._id !== id));
   };
 
   useEffect(() => {
-    axios.get("http://localhost:5000/pendingDonation").then((res) => {
+    axios.get("https://medibackend-au6d.onrender.com/pendingDonation").then((res) => {
       console.log(res.data);
       setMedicines(res.data);
     });

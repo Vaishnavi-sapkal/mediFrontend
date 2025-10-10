@@ -17,7 +17,7 @@ function Cart() {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:5000/medicinedatacart",
+        "https://medibackend-au6d.onrender.com/medicinedatacart",
 
         {
           withCredentials: true,

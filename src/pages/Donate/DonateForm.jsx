@@ -86,7 +86,7 @@ function DonateForm() {
         data.append("image", formData.image);
       }
 
-      const res = await axios.post("http://localhost:5000/newform", data, {
+      const res = await axios.post("https://medibackend-au6d.onrender.com/newform", data, {
         withCredentials: true,
         headers: {
           "Content-Type": "multipart/form-data",

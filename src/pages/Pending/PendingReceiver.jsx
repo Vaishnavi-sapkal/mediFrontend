@@ -14,16 +14,16 @@ function PendingReceiver() {
   const [Medicines, setMedicines] = useState([]);
 
   let handleReject = (id) => {
-    axios.patch("http://localhost:5000/pendingReceiver/reject", { id });
+    axios.patch("https://medibackend-au6d.onrender.com/pendingReceiver/reject", { id });
     setMedicines((prev) => prev.filter((med) => med._id !== id));
   };
 
   let handleAccept = (id) => {
-    axios.patch("http://localhost:5000/pendingReceiver/accept", { id });
+    axios.patch("https://medibackend-au6d.onrender.com/pendingReceiver/accept", { id });
     setMedicines((prev) => prev.filter((med) => med._id !== id));
   };
   useEffect(() => {
-    axios.get("http://localhost:5000/pendingReceiver").then((res) => {
+    axios.get("https://medibackend-au6d.onrender.com/pendingReceiver").then((res) => {
       console.log(res.data);
       setMedicines(res.data);
     });

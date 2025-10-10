@@ -11,7 +11,7 @@ import Register from "../pages/Register";
 import DonateForm from "../pages/Donate/DonateForm";
 import PendingDonation from "../pages/Pending/PendingDonation";
 import PendingReceiver from "../pages/Pending/PendingReceiver";
-import ShowMedi from "../pages/CRUDpages/showMedi";
+import ShowMedi from "../pages/CRUDpages/ShowMedi";
 import EditMedi from "../pages/CRUDpages/EditMedi";
 import ReceiverForm from "../pages/Receiver/ReceiverForm";
 import Dashboard from "../pages/Dashboard/Dashboard";

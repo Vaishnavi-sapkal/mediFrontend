@@ -20,7 +20,7 @@ const BestDonar = () => {
   const [bestDonor, setBestDonor] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/bestdonor").then((res) => {
+    axios.get("https://medibackend-au6d.onrender.com/bestdonor").then((res) => {
       setBestDonor(res.data);
       console.log(res.data);
     });

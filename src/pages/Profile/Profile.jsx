@@ -29,7 +29,7 @@ const Profile = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/role", { withCredentials: true })
+      .get("https://medibackend-au6d.onrender.com/role", { withCredentials: true })
       .then((res) => {
         setUser(res.data);
       });
@@ -45,7 +45,7 @@ const Profile = () => {
 
   const handleUpdate = () => {
     axios.put(
-      "http://localhost:5000/userinfo/edit",
+      "https://medibackend-au6d.onrender.com/userinfo/edit",
       {
         userName: user.userName,
         email: user.email,

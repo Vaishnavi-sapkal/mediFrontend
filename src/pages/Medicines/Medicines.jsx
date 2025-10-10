@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 export default function Medicines() {
   const [allMedicine, setallMedicine] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:5000/medicinedata").then((res) => {
+    axios.get("https://medibackend-au6d.onrender.com/medicinedata").then((res) => {
       console.log(res.data);
       setallMedicine(res.data);
     });

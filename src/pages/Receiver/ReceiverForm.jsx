@@ -65,7 +65,7 @@ function ReceiverForm() {
     }
 
     try {
-      const res = axios.post("http://localhost:5000/registerNGO", {
+      const res = axios.post("https://medibackend-au6d.onrender.com/registerNGO", {
         userName: formData.userName,
         shopName: formData.shopName,
         address: formData.address,

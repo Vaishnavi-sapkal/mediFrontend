@@ -89,7 +89,7 @@ function Register() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/signup",
+        "https://medibackend-au6d.onrender.com/signup",
         {
           userName: formData.userName,
           password: formData.password,
@@ -118,14 +118,14 @@ function Register() {
   };
 
   const handleSendOtp = async () => {
-    const { data } = await axios.post("http://localhost:5000/otp/send-otp", {
+    const { data } = await axios.post("https://medibackend-au6d.onrender.com/otp/send-otp", {
       phone: formData.contact,
     });
     toast(data.message);
   };
 
   const handleVerifyOtp = async () => {
-    const { data } = await axios.post("http://localhost:5000/otp/verify-otp", {
+    const { data } = await axios.post("https://medibackend-au6d.onrender.com/otp/verify-otp", {
       phone: formData.contact,
       code: otp,
     });

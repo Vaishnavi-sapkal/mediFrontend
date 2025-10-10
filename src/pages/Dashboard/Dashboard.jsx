@@ -16,13 +16,13 @@ function Dashboard() {
   const [Doughnuts, setDoughnuts] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/allmedicinedata").then((res) => {
+    axios.get("https://medibackend-au6d.onrender.com/allmedicinedata").then((res) => {
       setallMedicine(res.data);
     });
   }, []);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/alluser").then((res) => {
+    axios.get("https://medibackend-au6d.onrender.com/alluser").then((res) => {
       setallUser(res.data);
     });
   }, []);
