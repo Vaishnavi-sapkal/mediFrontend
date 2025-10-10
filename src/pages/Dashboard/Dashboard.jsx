@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { VerticalBar } from "./verticalBar";
+import { VerticalBar } from "./VerticalBar";
 import axios, { all } from "axios";
 import { Box, CircularProgress, Grid, Paper, Typography } from "@mui/material";
 import { Doughnut } from "react-chartjs-2";
